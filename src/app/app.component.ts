@@ -8,5 +8,8 @@ import {Quote} from './quote';
 })
 export class AppComponent {
   title = 'Quotes';
-
+  // quotes:Quote[]=[
+  //  new Quote ('Kim','quote'),
+  //  new Quote ('alex', 'I will Be there')
+  // ];
 }

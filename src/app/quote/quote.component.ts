@@ -9,11 +9,27 @@ import {Quote} from '../quote';
 export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
     new Quote ('Kim','quote'),
-    new Quote ('alex', 'I will Be there')
+    new Quote ('alex', 'I will Be there'),
    ];
+
+   newQuote={}
+
+
+
+
+  //  quoteDelete(complete:boolean){
+  //   this.isComplete.emit(complete);
+  // }
   constructor() { }
 
   ngOnInit(){
+  }
+
+  addNewQuote(quote){
+    // this.newQuote=new Quote(quote.author, quote.quote)
+    // this.quotes.push(this.newQuote)
+    this.quotes.push(quote);
+    console.log(quote);
   }
 
 }

@@ -1,8 +1,9 @@
 <div>
     <ul>
       <li *ngFor='let quote of quotes'>
-        {{quote.author}}<hr>{{quote.quote}}
+        {{quote.author}}<br>{{quote.quote}}
+        <button >Delete</button>
       </li>
-      <app-quote-form></app-quote-form>
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   </ul>
   </div>
