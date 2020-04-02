@@ -26,10 +26,18 @@ export class QuoteComponent implements OnInit {
   }
 
   addNewQuote(quote){
-    // this.newQuote=new Quote(quote.author, quote.quote)
-    // this.quotes.push(this.newQuote)
     this.quotes.push(quote);
     console.log(quote);
+  }
+
+  deleteQuote(quote){
+    console.log(quote)
+
+    for(var i=0; i<this.quotes.length; i++){
+      if(this.quotes[i]==quote){
+        this.quotes.splice(i, 1);
+      }
+    }
   }
 
 }

@@ -2,7 +2,7 @@
     <ul>
       <li *ngFor='let quote of quotes'>
         {{quote.author}}<br>{{quote.quote}}
-        <button >Delete</button>
+        <button (click)='deleteQuote(quote)'>Delete</button>
       </li>
       <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
   </ul>
