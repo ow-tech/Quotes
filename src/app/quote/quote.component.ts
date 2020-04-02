@@ -26,7 +26,7 @@ export class QuoteComponent implements OnInit {
   }
 
   addNewQuote(quote){
-    this.quotes.push(quote);
+    this.quotes.unshift(quote);
     console.log(quote);
   }
 
