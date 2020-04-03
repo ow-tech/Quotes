@@ -13,15 +13,19 @@
       <div class="col-md-6">
         <div class="card" style="width: 18rem;">
           <div>
+            <br>
             <ul>
               <li *ngFor='let quote of quotes'>
-                <h6 class="card-subtitle mb-2 text-muted"> - {{quote.author}}</h6>
-                <br>
+                <h6 class="card-subtitle mb-2 text-muted">Posted By: {{quote.name}}</h6>
                 <div class="card-body">
                   {{quote.quote}}
+                  <br>
+                  By:{{quote.author}}
                 </div>
-                <button (click)='deleteQuote(quote)'class="btn btn-sm btn-danger"><i class="fa fa-trash" id="delete"></i>Delete</button>
+                <button (click)='deleteQuote(quote)'class="btn btn-sm btn-danger">Delete</button>
+                <app-quote-details></app-quote-details>
               </li>
+              <br>
           </ul>
           </div>
         </div>

@@ -10,13 +10,13 @@ export class QuoteFormComponent implements OnInit {
   // quotes:Quote[]=[
   //   new Quote ('Kim','quote'),
   //   new Quote ('alex', 'I will Be there')
-  newQuote = new Quote("","");
+  newQuote = new Quote("","","");
 @Output() addQuote= new EventEmitter<Quote>();
 
 submitQuote(){
   this.addQuote.emit(this.newQuote);
   // reseting of form
-  this.newQuote = new Quote("","");
+  this.newQuote = new Quote("","","");
 }
   constructor() { }
 

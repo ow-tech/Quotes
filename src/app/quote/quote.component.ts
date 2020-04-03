@@ -8,8 +8,8 @@ import {Quote} from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
-    new Quote ('Kim','quote'),
-    new Quote ('alex', 'I will Be there'),
+    new Quote('Quincy','Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you have settle. As with all matters of the heart','Mr.Kennedy'),
+    new Quote ('Mandela','Of all the inventions of humans, the computer is going to rank near or at the top as history unfolds and we look back. It is the most awesome tool that we have ever invented. I feel incredibly lucky to be at exactly the right place in Silicon Valley, at exactly the right time, historically, where this invention has taken form.','Alex'),
    ];
 
    newQuote={}
