@@ -34,6 +34,11 @@ export class QuoteComponent implements OnInit {
     console.log(quote)
 
     for(var i=0; i<this.quotes.length; i++){
+      if(quote){
+        let quote= confirm('Are you sure you want to Delete this Quotes')
+        // if(this.quotes[i]==quote){
+        //   this.quotes.splice(i, 1);
+      }
       if(this.quotes[i]==quote){
         this.quotes.splice(i, 1);
       }
